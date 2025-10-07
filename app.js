@@ -16,6 +16,19 @@ function processPayment(amount) {
 }
 
 
+export function fetchData(userId) {
+    return {
+        id: userId,
+        name: "John Doe",
+        roles: ['user', 'admin'],
+        lastLogin: new Date('2023-01-01T12:00:00Z').toISOString(),
+        prefernces: {
+            notifications: true,
+            theme: 'dark'
+        }
+    }
+}
+
 export function greet(name) {
     return `Hello, ${name}!`
 }

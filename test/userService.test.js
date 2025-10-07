@@ -6,7 +6,7 @@ import { registerUser } from '../userService.js';
 
 // here we are mocking the real function 'sendEmail'.
 
-describe("User Function", () => {
+describe("User Service Function", () => {
     test('registerUser() should call sendEmail', () => {
         // Step 1: Create a flag variable
         let called = false;

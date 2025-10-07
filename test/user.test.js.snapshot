@@ -1,0 +1,15 @@
+exports[`User Feature > fetches the users data correctly 1`] = `
+{
+  "id": 123,
+  "name": "John Doe",
+  "roles": [
+    "user",
+    "admin"
+  ],
+  "lastLogin": "2023-01-01T12:00:00.000Z",
+  "prefernces": {
+    "notifications": true,
+    "theme": "dark"
+  }
+}
+`;

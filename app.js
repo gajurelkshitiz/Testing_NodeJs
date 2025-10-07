@@ -1,7 +1,9 @@
-export function processOrder(data) {
+// Dependency Injection..
+
+export function processOrder(data, dependencies) {
     // some random logic...
 
-    const paymentInfo = processPayment(data.amount);
+    const paymentInfo = dependencies.processPayment(data.amount);
 
     return paymentInfo;
 }

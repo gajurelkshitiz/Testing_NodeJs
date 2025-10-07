@@ -14,8 +14,13 @@ describe("Order Feature", () => {
         });
 
         const expected = {id: '123', amount:100};
-        const result = processOrder({ amount: 100 })
+
+        const result = processOrder({ amount: 100 }, { processPayment: mockedProcessPayment });
 
         assert.deepStrictEqual(result, expected);
+        assert.strictEqual(mockedProcessPayment.mock.callCount(), 1);    // SPY the function count, how many time is a function called.
+
+        const call = mockedProcessPayment.mock.calls[0];
+        assert.deepStrictEqual(call.arguments, [100]);
     })
 })

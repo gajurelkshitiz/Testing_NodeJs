@@ -15,6 +15,7 @@ describe("Order Feature", () => {
 
         const expected = {id: '123', amount:100};
 
+        assert.strictEqual(mockedProcessPayment.mock.callCount(), 0);  
         const result = processOrder({ amount: 100 }, { processPayment: mockedProcessPayment });
 
         assert.deepStrictEqual(result, expected);

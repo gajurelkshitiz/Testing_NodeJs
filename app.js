@@ -15,6 +15,7 @@ function processPayment(amount) {
     return {id: '123', amount: amount}
 }
 
+
 export function greet(name) {
     return `Hello, ${name}!`
 }

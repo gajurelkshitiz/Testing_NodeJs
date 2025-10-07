@@ -9,3 +9,6 @@ describe("User Feature", () => {
         t.assert.snapshot(data);
     })
 })
+
+
+// cmd for snapshot:- node --test --test-update-snapshots
